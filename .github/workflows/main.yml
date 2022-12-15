@@ -3,6 +3,10 @@ on:
     branches:
       - master
 
+
+
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,8 +14,8 @@ jobs:
 
     steps:
       - name: 'project'
-      - run: pwd
+        run: pwd
 
       - name: 'project test'
-      - run: echo yousef
+        run: echo yousef
 
