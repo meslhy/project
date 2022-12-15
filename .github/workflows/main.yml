@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: 'project'
+      - run: pwd
+
+      - name: 'project test'
+      - run: echo yousef
 
