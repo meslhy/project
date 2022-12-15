@@ -13,11 +13,12 @@ jobs:
 
 
     steps:
-      - name: 'printing folders contacts before'
-        run: ls
 
       - uses: actions/checkout@v3
 
 
-      - name: 'printing folders contacts after'
-        run: ls -a
+      - name: "login to dockerHub"
+        run: docker login --username meslhy --password dckr_pat_8uurZk228R4DKbl9hcHtSaOIFYY
+
+
+
