@@ -20,4 +20,4 @@ jobs:
 
 
       - name: 'printing folders contacts after'
-        run: ls
+        run: ls -a
