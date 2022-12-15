@@ -13,9 +13,11 @@ jobs:
 
 
     steps:
-      - name: 'project'
-        run: pwd
+      - name: 'printing folders contacts before'
+        run: ls
 
-      - name: 'project test'
-        run: echo yousef
+      - uses: actions/checkout@v3
 
+
+      - name: 'printing folders contacts after'
+        run: ls
