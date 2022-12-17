@@ -1,9 +1,7 @@
-FROM openjdk
+FROM nginx:alpine
 
 WORKDIR /application
 
-COPY taskOs.java .
+COPY taskOs.html .
 
-RUN javac taskOs.java
-
-CMD java taskOs
+RUN lynx taskOs.html
