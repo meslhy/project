@@ -1,7 +1,9 @@
-FROM nginx
+FROM nginx:alpine
 
-WORKDIR /application
+WORKDIR /app
 
-COPY taskOs.html .
+COPY . .
 
-RUN lynx taskOs.html
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+
